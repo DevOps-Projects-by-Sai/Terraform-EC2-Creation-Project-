@@ -13,8 +13,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "this" {
-  ami                     = "ami-0c1ac8a41498c1a9c"
+  ami                     = ""
   instance_type           = "t3.micro"
-  subnet_id               = "subnet-0633fecf289de1d47"
+  subnet_id               = ""
 
 }
