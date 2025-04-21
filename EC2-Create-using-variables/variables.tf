@@ -1,3 +1,5 @@
+#In variables.tf, you will define the variables
+
 variable "ami" {
     description = "It contains the ami id of the EC2"
 }
