@@ -12,10 +12,3 @@ resource "aws_dynamodb_table" "dynamodb_table" {
       type = "S"
     }
 }
-
-resource "aws_instance" "example" {
-    ami = "ami-0c1ac8a41498c1a9c"
-    instance_type = "t3.micro"
-    subnet_id = "subnet-0633fecf289de1d47"
-    key_name = "windows-demo"
-}
