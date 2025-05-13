@@ -11,8 +11,8 @@ provider "vault" {
     path = "auth/approle/login"
 
     parameters = {
-      role_id = "3cd8d27a-198b-f272-cfb4-d177118ae2e0"
-      secret_id = "5acea332-19ec-d641-f7fd-b4276eb6ef57"
+      role_id = "3c0"        #Generate the role_id and secret_id using commands
+      secret_id = "5ac"
     }
   }
 }
@@ -26,8 +26,8 @@ data "vault_kv_secret_v2" "example" {
 
 
 resource "aws_instance" "example" {
-    ami = "ami-0c1ac8a41498c1a9c"
-    instance_type = "t3.micro"
+    ami = "ami-"
+    instance_type = "t3.micr"
 
     tags = {
       name = "test"
